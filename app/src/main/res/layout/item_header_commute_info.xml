@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:visibility="gone">
+    <LinearLayout
+        android:paddingTop="@dimen/_10sdp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icn_back_01" />
+        <TextView
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_weight="1"
+            android:textColor="@color/fc_mainColor"
+            android:text="출퇴근 상세기록"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:gravity="bottom|center|right"
+        android:id="@+id/tv_commuteList"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/_9sdp"
+        android:textColor="@color/fc_mainColor"
+
+        android:text="이전기록조회"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"/>
+
+</LinearLayout>

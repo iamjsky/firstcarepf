@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:singleLine="true"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textColor="@color/fc_mainColor"
+        android:text="-"
+        android:id="@+id/spinnerText"
+        android:textSize="@dimen/_11sdp"
+
+        android:alpha="0.87"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/icn_arrow_down_02"
+        android:scaleType="centerInside"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

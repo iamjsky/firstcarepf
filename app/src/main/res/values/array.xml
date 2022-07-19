@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectType">
+        <item>선택해 주세요.</item>
+        <item>대상자 \u00B7 보호자</item>
+        <item>케어선생님</item>
+        <item>제공인력</item>
+    </string-array>
+    <string-array name="selectEmailType">
+        <item>선택해 주세요.</item>
+        <item>naver.com</item>
+        <item>daum.net</item>
+        <item>gmail.com</item>
+        <item>nate.com</item>
+        <item>hotmail.com</item>
+        <item>yahoo.co.kr</item>
+        <item>lycos.co.kr</item>
+        <item>직접 입력</item>
+    </string-array>
+    <string-array name="selectGender">
+        <item>성별 선택</item>
+        <item>남자</item>
+        <item>여자</item>
+    </string-array>
+
+    <string-array name="serviceDummy">
+        <item>서비스 선택</item>
+        <item>동화야 놀-자</item>
+        <item>해양역사문화체험아카데미1</item>
+        <item>아동건강관리서비스</item>
+        <item>아동청소년 심리 치유 서비스</item>
+        <item>아동정서발달지원서비스</item>
+        <item>해양역사문화체험아카데미2</item>
+        <item>해양역사문화체험아카데미3</item>
+        <item>해양역사문화체험아카데미4</item>
+
+    </string-array>
+
+
+
+
+
+</resources>

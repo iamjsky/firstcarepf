@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_80"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:gravity="top|center"
+    android:id="@+id/main_layout"
+
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/layout_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/bg_popup_01">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@color/fc_boldColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/user_commute_admin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:id="@+id/layout_contentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <!--            검색-->
+            <LinearLayout
+
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:orientation="vertical"
+
+                android:background="@color/fc_middleLightColor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:background="@color/fc_middleLightColor"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:background="@color/fc_mainColor"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="@string/search_user_name"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="match_parent"/>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp">
+
+                        <EditText
+                            android:id="@+id/edtxt_inputUser"
+                            android:textColor="@color/fc_mainColor"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:paddingLeft="@dimen/_6sdp"
+                            android:gravity="center|left"
+                            android:background="@drawable/bg_square_01"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!---->
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_resultEmpty"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/fc_mainColor"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:text="조회 결과가 없습니다."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_progressBar"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_margin="@dimen/_11sdp"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_emptyResult"
+            android:visibility="gone"
+            android:textColor="@color/fc_mainColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="매칭된 이용자가 없습니다."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--유저리스트-->
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/item_user_attendance"
+            android:id="@+id/rv_userListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_weight="1" />
+
+
+        <!--            -->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:padding="@dimen/_16sdp"
+        android:src="@drawable/icn_popup_close_03"
+
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_popup_close_01"
+        android:stateListAnimator="@null"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        />
+</LinearLayout>

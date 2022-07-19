@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_20sdp"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icn_back_01" />
+
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:text="퍼스트케어 공지사항 목록입니다."
+        android:textColor="@color/fc_mainColor"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="2020-04-20"
+            android:textColor="@color/fc_mainColor"
+            android:textSize="@dimen/_12sdp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="@dimen/_9sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:background="@color/fc_mainColor" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="관리자"
+            android:textColor="@color/fc_mainColor"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+
+        android:background="@color/fc_middleLightColor2" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:text="글 내용이 없습니다."
+                android:textColor="@color/fc_mainColor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:background="@color/fc_middleLightColor2" />
+
+
+<View
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"/>
+    <Button
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:stateListAnimator="@null"
+        android:textColor="@color/fc_boldColor"
+
+        android:background="@drawable/bg_rounded_01"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11sdp"
+        android:text="@string/confirm"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"/>
+
+</LinearLayout>

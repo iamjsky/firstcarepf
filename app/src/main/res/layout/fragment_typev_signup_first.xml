@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:visibility="visible"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+
+        android:id="@+id/layout_inputLayer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textColor="@color/fc_mainColor"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_essential"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:textColorHint="@color/fc_middleLightColor2"
+                android:inputType="text"
+                android:id="@+id/edtxt_inputName"
+                android:textColor="@color/fc_mainColor"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/bg_input_rounded_01"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:hint="@string/input_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/fc_mainColor"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id_essential"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="@color/fc_middleLightColor2"
+                    android:inputType="text"
+                    android:id="@+id/edtxt_inputId"
+                    android:textColor="@color/fc_mainColor"
+                    android:singleLine="true"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/bg_input_rounded_01"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:hint="@string/input_id"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"/>
+                <Button
+                    android:id="@+id/btn_checkDuplicateId"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/fc_mainColor"
+                    android:text="@string/duplicate_check"
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:textColor="@color/fc_mainColor"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_essential"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:textColorHint="@color/fc_middleLightColor2"
+                android:inputType="textPassword"
+                android:id="@+id/edtxt_inputPassword"
+                android:textColor="@color/fc_mainColor"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/bg_input_rounded_01"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:hint="@string/input_password"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"/>
+            <TextView
+                android:textColor="@color/fc_mainColor"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_match_essential"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="@color/fc_middleLightColor2"
+                    android:inputType="textPassword"
+                    android:id="@+id/edtxt_inputMatchPassword"
+                    android:textColor="@color/fc_mainColor"
+                    android:singleLine="true"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/bg_input_rounded_01"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:hint="@string/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"/>
+                <TextView
+                    android:id="@+id/tv_checkMatchPw"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/fc_mainColor"
+                    android:text="@string/not_match"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:textColor="@color/fc_mainColor"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number_essential"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+            <Button
+                android:gravity="center|left"
+                android:id="@+id/btn_phoneAuth"
+                android:textColor="@color/fc_mainColor"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/bg_input_rounded_01"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:text="@string/user_phone_auth"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"/>
+            <Button
+                android:visibility="gone"
+                android:gravity="center|left"
+                android:id="@+id/btn_deviceAuth"
+                android:textColor="@color/fc_mainColor"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/bg_input_rounded_01"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:text="휴대폰 기기등록"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"/>
+        </LinearLayout>
+        <Button
+            android:stateListAnimator="@null"
+            android:textColor="@color/fc_boldColor"
+
+            android:background="@drawable/bg_rounded_01"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:text="@string/next"
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"/>
+
+</LinearLayout>
+
+</LinearLayout>

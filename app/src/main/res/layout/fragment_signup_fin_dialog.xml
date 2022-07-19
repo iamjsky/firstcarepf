@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:visibility="visible"
+    android:padding="@dimen/_20sdp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icn_back_01" />
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:gravity="left|center"
+            android:text=""
+            android:textColor="@color/fc_mainColor"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@color/fc_middleLightColor2" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textColor="@color/fc_boldColor"
+            android:text="@string/signup_finish_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/_25sdp"
+        android:stateListAnimator="@null"
+        android:textColor="@color/fc_boldColor"
+        android:background="@drawable/bg_rounded_01"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11sdp"
+        android:text="@string/confirm"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"/>
+
+</LinearLayout>

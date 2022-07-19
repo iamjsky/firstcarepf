@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_24sdp"
+    android:orientation="vertical"
+  >
+
+    <LinearLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_agencyName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="기관명 41"
+            android:textColor="@color/fc_mainColor"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_agencyPhoneNum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="051-123-4567"
+            android:textColor="@color/fc_mainColor"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp" />
+
+
+</LinearLayout>

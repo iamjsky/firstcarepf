@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/_20sdp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/main_layout"
+>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icn_back_01" />
+
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="@dimen/_15sdp"
+    android:id="@+id/layout_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--로그인 영역-->
+    <LinearLayout
+
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textColor="@color/fc_mainColor"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/fc_mainColor"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:text="@string/id"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+
+            android:inputType="text"
+            android:textColorHint="@color/fc_middleLightColor2"
+            android:id="@+id/edtxt_inputId"
+            android:textColor="@color/fc_mainColor"
+            android:singleLine="true"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/bg_input_rounded_01"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            android:hint="@string/input_id"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"/>
+        <TextView
+            android:textColor="@color/fc_mainColor"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:text="@string/password"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColorHint="@color/fc_middleLightColor2"
+            android:inputType="textPassword"
+            android:id="@+id/edtxt_inputPassword"
+            android:textColor="@color/fc_mainColor"
+            android:singleLine="true"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/bg_input_rounded_01"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            android:hint="@string/input_password"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"/>
+
+        <Button
+
+            android:layout_marginTop="@dimen/_25sdp"
+            android:stateListAnimator="@null"
+            android:textColor="@color/fc_boldColor"
+
+            android:background="@drawable/bg_rounded_01"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:text="@string/login"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_checkAutoLogin"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="right|center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:background="@drawable/radiobtn_custom_01"
+                android:button="@null"
+                android:id="@+id/chkbox_checkAttendance"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"/>
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_checkAttendance"-->
+<!--                android:src="@drawable/bg_circle_01"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:layout_width="@dimen/_10sdp"-->
+<!--                android:layout_height="@dimen/_10sdp"/>-->
+
+            <TextView
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:textColor="@color/fc_mainColor"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:text="@string/auto_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!---->
+
+    <!--    메뉴 영역   -->
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:clickable="true"
+                android:id="@+id/tv_findId"
+                android:textColor="@color/fc_mainColor"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:text="@string/find_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@color/fc_mainColor"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/tv_findPassword"
+                android:textColor="@color/fc_mainColor"
+
+
+                android:textSize="@dimen/_11sdp"
+
+                android:textStyle="bold"
+                android:text="@string/find_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/fc_mainColor"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:text="@string/guest_sign_up_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_signUp"
+                android:textColor="@color/fc_mainColor"
+
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:textSize="@dimen/_11sdp"
+
+                android:textStyle="bold"
+                android:text="@string/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--    -->
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

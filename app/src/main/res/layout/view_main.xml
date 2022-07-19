@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="0dp">
+        <!--    출퇴근 기록하기-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/commute_enrol"
+                android:textColor="@color/fc_mainColor"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <!--    선택 레이어-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@color/fc_middleLightColor2"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fc_middleLightColor"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/select_agency"
+                        android:textColor="@color/fc_mainColor"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_2sdp">
+
+                        <Spinner
+                            android:id="@+id/sp_selectAgency"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:background="@drawable/bg_square_01"
+                            android:dropDownWidth="match_parent"
+                            android:overlapAnchor="false"
+                            android:popupBackground="@drawable/bg_square_02"
+                            android:popupElevation="3dp"
+                            android:popupTheme="@style/customSpinner"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/fc_mainColor"
+
+                            />
+                        <!-- <LinearLayout
+                             android:gravity="center"
+                             android:id="@+id/layout_selectAgency"
+                             android:layout_margin="@dimen/_4sdp"
+                             android:orientation="horizontal"
+                             android:background="@drawable/bg_square_01"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+                             <TextView
+                                 android:layout_weight="1"
+                                 android:paddingLeft="@dimen/_6sdp"
+                                 android:gravity="center|left"
+                                 android:textStyle="bold"
+                                 android:text="제공기관 선택"
+                                 android:textSize="@dimen/_10sdp"
+                                 android:stateListAnimator="@null"
+                                 android:background="@android:color/transparent"
+                                 android:textColor="@color/fc_mainColor"
+                                 android:id="@+id/tv_selectAgency"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 />
+                             <ImageView
+
+                                 android:layout_marginRight="@dimen/_6sdp"
+                                 android:background="@drawable/icn_arrow_down_03"
+
+                                 android:layout_width="@dimen/_12sdp"
+                                 android:layout_height="@dimen/_12sdp" />
+
+                         </LinearLayout>-->
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@color/fc_middleLightColor"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/select_service"
+                        android:textColor="@color/fc_mainColor"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_2sdp">
+
+
+                        <Spinner
+                            android:id="@+id/sp_selectService"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:background="@drawable/bg_square_01"
+                            android:dropDownWidth="match_parent"
+                            android:overlapAnchor="false"
+                            android:popupBackground="@drawable/bg_square_02"
+                            android:popupTheme="@style/customSpinner"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/fc_mainColor"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!---->
+
+
+            <!--    출퇴근버튼-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_getToWork"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_rounded_03"
+                    android:stateListAnimator="@null"
+                    android:text="@string/get_to_work_01"
+                    android:textColor="@color/fc_mainColor"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_finishWork"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_rounded_01"
+                    android:stateListAnimator="@null"
+                    android:text="@string/finish_work_01"
+                    android:textColor="@color/fc_boldColor"
+
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <!--    -->
+        </LinearLayout>
+        <!---->
+
+        <!--    출퇴근 상세 내용-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <!--            정보 레이어  -->
+            <LinearLayout
+
+                android:id="@+id/layout_commuteInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="top"
+
+                    android:text="@string/commute_info"
+                    android:textColor="@color/fc_mainColor"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rv_refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:tr_head_height="@dimen/_60sdp"
+
+                    app:tr_overscroll_height="@dimen/_60sdp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_commuteListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:listitem="@layout/item_commute_info" />
+
+
+                </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+            </LinearLayout>
+
+            <!--            -->
+
+
+        </LinearLayout>
+        <!---->
+
+    </LinearLayout>
+
+</LinearLayout>

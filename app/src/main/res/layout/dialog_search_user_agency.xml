@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_80"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:gravity="top|center"
+
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/bg_popup_01">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@color/fc_boldColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center|top"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:textColor="@color/fc_mainColor"
+                android:text="시/도"
+                android:textSize="@dimen/_11sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/fc_mainColor"
+                android:popupElevation="3dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_input_rounded_01"
+                android:entries="@array/selectEmailType"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:textColor="@color/fc_mainColor"
+                android:text="시/구/군"
+                android:textSize="@dimen/_11sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/fc_mainColor"
+                android:popupElevation="3dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_input_rounded_01"
+                android:entries="@array/selectEmailType"
+                />
+
+<LinearLayout
+    android:layout_marginTop="@dimen/_20sdp"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <View
+        android:background="@color/fc_deepGrayColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+<LinearLayout
+    android:background="@color/fc_agencyHeaderBackgroundColor"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_24sdp">
+
+    <TextView
+
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="기관명"
+        android:layout_weight="1"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/fc_mainColor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="전화번호"
+        android:layout_weight="1"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/fc_mainColor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/item_search_agency"
+        android:id="@+id/rv_agencyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:stateListAnimator="@null"
+            android:textColor="@color/white"
+
+            android:background="@drawable/bg_rounded_05"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:text="선택하기"
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:padding="@dimen/_16sdp"
+        android:src="@drawable/icn_popup_close_03"
+
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_popup_close_01"
+        android:stateListAnimator="@null"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        />
+</LinearLayout>

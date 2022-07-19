@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.BoardActivity"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_20sdp"
+    android:id="@+id/main_layout">
+    <ImageView
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icn_back_01" />
+
+
+    <TextView
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="title"
+        android:textColor="@color/fc_mainColor"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+
+
+    <include layout="@layout/view_board"
+        android:id="@+id/layout_board"
+        android:visibility="visible"/>
+
+    </LinearLayout>

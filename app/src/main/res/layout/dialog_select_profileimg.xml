@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_80"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingRight="@dimen/_70sdp"
+    android:paddingLeft="@dimen/_70sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:gravity="top|center"
+
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/bg_popup_01">
+
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp">
+
+            <View
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:background="@color/fc_middleLightColor2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/layout_checkAlbum"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_checkAlbum"
+                    android:src="@drawable/bg_circle_01"
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <TextView
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/fc_boldColor"
+                    android:text="@string/select_album"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:background="@color/fc_middleLightColor2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/layout_checkCamera"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_checkCamera"
+                    android:src="@drawable/bg_circle_01"
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <TextView
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/fc_boldColor"
+                    android:text="@string/select_photo_shoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/_6sdp"
+
+                android:background="@color/fc_middleLightColor2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+            <Button
+                android:layout_marginTop="@dimen/_20sdp"
+
+                android:stateListAnimator="@null"
+                android:textColor="@color/fc_boldColor"
+
+                android:background="@drawable/bg_rounded_01"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11sdp"
+                android:text="확인"
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"/>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:padding="@dimen/_16sdp"
+        android:src="@drawable/icn_popup_close_03"
+
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_popup_close_01"
+        android:stateListAnimator="@null"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        />
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+android:id="@+id/main_layout"
+    android:background="@color/white"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/_20sdp"
+    android:paddingLeft="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_352sdp"
+    android:gravity="center|left"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:textColor="@color/fc_mainColor"
+        android:text="@string/select_sign_up_type_01"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/fc_mainColor"
+        android:text="@string/select_sign_up_type_02"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:elevation="0dp"
+
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:stateListAnimator="@null"
+
+                android:textColor="@color/fc_typeSelectOffTextColor"
+                android:id="@+id/btn_TypeG"
+                android:background="@drawable/bg_select_type_off_01"
+                android:enabled="false"
+                android:clickable="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11sdp"
+                android:text="@string/type_g"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"/>
+            <Button
+
+                android:stateListAnimator="@null"
+
+                android:textColor="@color/fc_typeSelectOffTextColor"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:id="@+id/btn_TypeN"
+                android:background="@drawable/bg_select_type_off_01"
+                android:enabled="false"
+                android:clickable="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11sdp"
+                android:text="@string/type_n"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"/>
+            <Button
+                android:textStyle="bold"
+                android:stateListAnimator="@null"
+                android:textColor="@color/fc_typeSelectOffTextColor"
+                android:id="@+id/btn_TypeV"
+                android:background="@drawable/bg_select_type_off_01"
+
+                android:textSize="@dimen/_11sdp"
+                android:text="@string/type_v"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:stateListAnimator="@null"
+            android:textColor="@color/fc_boldColor"
+
+            android:background="@drawable/bg_rounded_01"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:text="@string/next"
+            android:id="@+id/btn_Next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
